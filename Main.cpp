@@ -52,6 +52,9 @@ int main(){
 						pila->pop();
 						acumulador/=atoi((pila->pop()->getValue()).c_str());
 						
+					}else if(pila->top()->getValue()=="-"){
+						pila->pop();
+						acumulador-=atoi((pila->pop()->getValue()).c_str());
 					}
 					
 					//push acumulador
